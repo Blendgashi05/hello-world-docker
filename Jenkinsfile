@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone from GitHub') {
-            steps {
-                git 'https://github.com/Blendgashi05/hello-world-docker.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
